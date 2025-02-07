@@ -48,6 +48,18 @@ function runGame(gameType) {
 function checkAnswer() {
     //because this targets an input box, uses value instead of textContent
     let userAnswer = parseInt(document.getElementById("answer-box").value);
+    let calculatedAnswer = calculateCorrectAnswer();
+    let isCorrect = userAnswer === calculatedAnswer[0];
+
+    if (isCorrect) {
+        alert("Hey! You got it right! :D");
+    }
+
+    else {
+        alert(`Ah, you answered ${userAnswer}, the correct answer was ${calculatedAnswer[0]}!`);
+    }
+
+    runGame(calculatedAnswer[1]);
 }
 
 /**
