@@ -164,8 +164,6 @@ body {
 }
 
 .btn--gray {
- 
-    margin-bottom: 25px;
     background-color: #445361;
     border: 1px transparent;
     border-radius: 20px;
@@ -174,6 +172,11 @@ body {
 .btn--gray:active,
 .btn--gray:hover {
     background-color: #0d1013;
+}
+
+.submit-bt{
+    margin-bottom:25px;
+    margin-top:30px;
 }
 
 /* --------- Media queries */
